@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logowhite.png" type="image/x-icon">
+    <title>Frame Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav style="background-color: blue;" class="navbar navbar-dark bg-info">
+        <a class="navbar-brand mx-auto my-auto" href="#">
+            <div class="d-flex justify-content-center">
+                <img src="logowhite.png" width="100" class=" align-top" alt="">
+            </div>
+            <h1 class="my-2 text-wrap title font-weight-bold">Frame Generator</h1>
+        </a>
+    </nav>
+    <!-- Button section starts-->
+    <div class="container my-4  border  rounded p-4" style="border-color:grey;" id="chooseOption">
+        <p class="text-center"><strong>Choose Your Uplift Route</strong></p>
+        <div class="text-center">
+            <button type="button" class="btn my-3 btn-secondary font-weight-bold mx-auto" id="participant" value="1"
+                name="choose">Participant</button>
+            <button type="button" class="btn my-3 btn-secondary font-weight-bold mx-auto" id="mentor" value="2"
+                name="choose">Mentor</button>
+        </div>
+    </div>
+    <!-- button section ends -->
+    <div id="specific" class="container my-4  border  rounded p-4" style="border-color:grey;" id="showHeading">
+        <strong>
+            <p class="text-center font-weight-bolder" id="sectionHeading"></p>
+        </strong>
+    </div>
+
+    <div id="badge-container" class="container my-4">
+        <div class="row card shadow-lg rounded p-4">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <form action="">
+                    <p>Choose Image that describes you perfectly</p>
+                    <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+                </form>
+            </div>
+            <div class="alert text-center my-3 alert-info" role="alert">
+                <i class="fas fa-exclamation-triangle"></i>&nbsp;
+                If you face any problem - Refresh the page or for Best view Open it on Desktop or in Desktop mode in
+                Mobile Browsers.
+            </div>
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-4 d-flex justify-content-around">
+                <button type="submit" id="preview"
+                    class="btn my-3 btn-primary font-weight-bold mx-auto">Preview</button>
+            </div>
+            <!-- <div class="col-md-4 d-flex justify-content-around">
+                <span class="badge badge-warning my-auto"><h5 class="my-auto">Mentor Badge</h5></span>
+            </div> -->
+            <div class="col-md-4 d-flex justify-content-center">
+                <button id="download" class="btn my-3 btn-success font-weight-bold mx-auto">Download</button>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div style="position: absolute; left: 50%; transform: translateX(-50%);"
+                class="text-center d-flex justify-content-center my-4">
+                <canvas class="w-100 d-flex justify-content-center" id="result">
+                    <img src="M-B.png"
+                        style="background-color: transparent; position: absolute; height: 600px; width: 530px"
+                        id="badgeDesign2" alt="Badge">
+                    <img src="PB.png"
+                        style="background-color: transparent; position: absolute; height: 600px; width: 530px"
+                        id="badgeDesign1" alt="Badge">
+                    <img crossorigin="anonymous" style="width: 440px; height: 440px; z-index: -1;" src=""
+                        alt="Your Image" id="imgDisplayed" class="mx-5 my-4 position-absolute">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

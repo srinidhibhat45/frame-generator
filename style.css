@@ -1,0 +1,14 @@
+/* stylesheet */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 1rem;
+  }
+}
+
+#specific {
+  display: none;
+}
+
+#badge-container {
+  display: none;
+}
