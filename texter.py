@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
  
 # create Image object with the input image
  
-image = Image.open('M-B.png')
+image = Image.open('MemberBadge.png')
  
 # initialise the drawing context with
 # the image object as background
@@ -18,7 +18,7 @@ font = ImageFont.truetype('Roboto-Bold.ttf', size=45)
  
 # starting position of the message
  
-(x, y) = (50, 50)
+(x, y) = (100, 100)
 message = "Happy Birthday!"
 color = 'rgb(0, 0, 0)' # black color
  
