@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +8,13 @@
     <meta name="twitter:creator" content="@YourFatGuy">
     <meta name="twitter:title" content="Frame Generator">
     <meta name="twitter:description" content="Frame Generator Project">
-    <meta name="twitter:image" content="https://imageshack.com/i/pooVaa2Fp">
+    <meta name="twitter:image" content="https://i.ibb.co/qJhwsNv/Winner-Badge.png">
 
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="icon" href="https://i.ibb.co/HBKYsZD/logo.png" type="image/x-icon">
     <title>Frame Generator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -25,19 +24,30 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
     <!-- Image and text -->
     <nav class="navbar navbar-dark bg-info">
-        <a class="navbar-brand mx-auto my-auto" href="#">
-            <div class="d-flex justify-content-right">
-                <img src="logo.png" width="100" class=" align-top" alt="">
-            </div>
-            
-        </a>
-        <a class="navbar-brand mx-auto my-auto" href="#">
-            <h1 class="my-2 text-wrap title font-weight-bold">Frame Generator</h1>
+        <a class="navbar-brand mx-auto my-auto" href="https://frame-generator.netlify.app/">
+            <h1 class="p-2 text-wrap title font-weight-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frame Generator</h1>
+
+
+            <a class="github-button" href="https://github.com/srinidhibhat45/frame-generator"
+                data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star"
+                data-icon="octicon" data-size="large"
+                aria-label="Star srinidhibhat45/frame-generator on GitHub">Star</a>&nbsp;
+
+            <a class="github-button" href="https://github.com/srinidhibhat45"
+                data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large"
+                aria-label="Follow @srinidhibhat45 on GitHub"></a>&nbsp;
+
+            <a class="github-button" href="https://github.com/srinidhibhat45/frame-generator/fork"
+                data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large"
+                aria-label="Fork srinidhibhat45/frame-generator on GitHub">Fork</a>
+
         </a>
     </nav>
     <!-- Button section starts-->
@@ -48,22 +58,31 @@
     <div class="container my-4  border  rounded p-4" style="border-color:grey;" id="chooseOption">
         <p class="text-center"><strong>Choose Your frame Type</strong></p>
         <div class="text-center">
-            <button style="background-color:#acdfe1; color:black; box-shadow: 3px 3px 3px black; border: none;" type="button" class="btn my-3 btn-secondary font-weight-bold mx-auto" id="member" value="1"
+            <button style="background-color:#acdfe1; color:black; box-shadow: 3px 3px 3px black; border: none;"
+                type="button" class="btn my-3 btn-secondary font-weight-bold mx-auto" id="member" value="1"
                 name="choose">Member</button> &nbsp;&nbsp;&nbsp;
-            <button style="background-color:#fcc5c6; color:black; box-shadow: 3px 3px 3px black; border: none;" type="button" class="btn my-3 btn-secondary font-weight-bold mx-auto" id="champion" value="2"
+            <button style="background-color:#fcc5c6; color:black; box-shadow: 3px 3px 3px black; border: none;"
+                type="button" class="btn my-3 btn-secondary font-weight-bold mx-auto" id="champion" value="2"
                 name="choose">Champion</button> &nbsp;&nbsp;&nbsp;
-            <button style="background-color:#ffde59; color:black; box-shadow: 3px 3px 3px black; border: none;" type="button" class="btn my-3 btn-secondary font-weight-bold mx-auto" id="winner" value="3"
+            <button style="background-color:#ffde59; color:black; box-shadow: 3px 3px 3px black; border: none;"
+                type="button" class="btn my-3 btn-secondary font-weight-bold mx-auto" id="winner" value="3"
                 name="choose">Winners</button> &nbsp;&nbsp;&nbsp;
         </div>
     </div>
     <div class="container my-4 border rounded p-4">
-        <img style="height: 300px;" src="MemberBadge.png">
-        <img style="height: 300px;" src="ChampionBadge.png">
-        <img style="height: 300px;" src="WinnerBadge.png">
+        <a target="_blank" href="https://i.ibb.co/rsywbpx/Member-Badge.png"><img style="height: 300px;"
+                src="https://i.ibb.co/rsywbpx/Member-Badge.png" alt="Member-Badge" border="0"></a>
+        <a target="_blank" href="https://i.ibb.co/BKbDr95/Champion-Badge.png"><img style="height: 300px;"
+                src="https://i.ibb.co/BKbDr95/Champion-Badge.png" alt="Champion-Badge" border="0"></a>
+        <a target="_blank" href="https://i.ibb.co/qJhwsNv/Winner-Badge.png"><img style="height: 300px;"
+                src="https://i.ibb.co/qJhwsNv/Winner-Badge.png" alt="Winner-Badge" border="0"></a>
+
+
+
     </div>
 
     <!-- button section ends -->
-     
+
     <div id="specific" class="container my-4  border  rounded p-4" style="border-color:grey;" id="showHeading">
         <strong>
             <p class="text-center font-weight-bolder" id="sectionHeading"></p>
@@ -100,13 +119,13 @@
             <div style="position: absolute; left: 50%; transform: translateX(-50%);"
                 class="text-center d-flex justify-content-center my-4">
                 <canvas class="w-100 d-flex justify-content-center" id="result">
-                    <img src="Champion.png"
+                    <img src="frames/Champion.png"
                         style="background-color: transparent; position: absolute; height: 600px; width: 530px"
                         id="badgeDesign2" alt="Badge">
-                    <img src="Member.png"
+                    <img src="frames/Member.png"
                         style="background-color: transparent; position: absolute; height: 600px; width: 530px"
                         id="badgeDesign1" alt="Badge">
-                    <img src="Winner.png"
+                    <img src="frames/Winner.png"
                         style="background-color: transparent; position: absolute; height: 600px; width: 530px"
                         id="badgeDesign3" alt="Badge">
                     <img crossorigin="anonymous" style="width: 440px; height: 440px; z-index: -1;" src=""

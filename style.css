@@ -12,3 +12,7 @@
 #badge-container {
   display: none;
 }
+
+.bg-dark{
+  color: black ;
+}

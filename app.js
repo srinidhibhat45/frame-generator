@@ -3,7 +3,7 @@ const loadImage = (event) => {
   image.src = URL.createObjectURL(event.target.files[0]);
 };
 
-
+// BADGE FOR MEMBERS
 
 document.getElementById("member").onclick = function changeContent() {
   document.getElementById("specific").style.display = "block";
@@ -48,7 +48,7 @@ document.getElementById("member").onclick = function changeContent() {
 };
 
 
-
+// BADGE FOR CHAMPIONS
 
 
 document.getElementById("champion").onclick = function changeContent() {
@@ -93,6 +93,9 @@ document.getElementById("champion").onclick = function changeContent() {
     document.body.removeChild(a);
   });
 };
+
+
+// BADGE FOR WINNERS
 
 
 document.getElementById("winner").onclick = function changeContent() {
