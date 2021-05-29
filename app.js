@@ -23,7 +23,7 @@ document.getElementById("member").onclick = function changeContent() {
     ctx.fill();
 
     const image = document.getElementById("imgDisplayed");
-    ctx.drawImage(image, 30, 20, 545, 530);
+    ctx.drawImage(image, 30, 30, 545, 490);
     const badgeDesign = document.getElementById("badgeDesign1");
     ctx.drawImage(badgeDesign, 0, 0, 600, 600);
   };
@@ -69,7 +69,7 @@ document.getElementById("champion").onclick = function changeContent() {
     ctx.fill();
 
     const image = document.getElementById("imgDisplayed");
-    ctx.drawImage(image, 30, 20, 545, 530);
+    ctx.drawImage(image, 30, 30, 545, 490);
 
     const badgeDesign = document.getElementById("badgeDesign2");
     ctx.drawImage(badgeDesign, 0, 0, 600, 600);
@@ -116,7 +116,7 @@ document.getElementById("winner").onclick = function changeContent() {
     ctx.fill();
 
     const image = document.getElementById("imgDisplayed");
-    ctx.drawImage(image, 30, 20, 545, 530);
+    ctx.drawImage(image, 30, 30, 545, 490);
     const badgeDesign = document.getElementById("badgeDesign3");
     ctx.drawImage(badgeDesign, 0, 0, 600, 600);
   };
