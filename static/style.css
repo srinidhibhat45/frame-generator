@@ -1,4 +1,9 @@
 /* stylesheet */
+
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 @media only screen and (max-width: 600px) {
   .title {
     font-size: 1rem;
@@ -11,4 +16,18 @@
 
 #badge-container {
   display: none;
+}
+
+.btn-style{
+  color:black; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
+  border: none;
+}
+
+.frames{
+  background-color: transparent; 
+  position: absolute; 
+  height: 600px; 
+  width: 530px;
+  margin-top: 100px;
 }
